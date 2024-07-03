@@ -4,99 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Post | Home </title>
+    <title>India Post</title>
     <link rel="stylesheet" href="output.css">
-    <style>
-        /* . {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.3);
-        } */
-        .menu-hidden {
-            transform: translateX(100%);
-        }
-
-        .menu-visible {
-            transform: translateX(0);
-        }
-
-        .transition-transform {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .slider-wrapper {
-            position: relative;
-            overflow: hidden;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .slider-dots {
-            text-align: center;
-            position: absolute;
-            width: 100%;
-            bottom: 10px;
-        }
-
-        .slider-dots button {
-            cursor: pointer;
-            height: 12px;
-            width: 12px;
-            margin: 0 3px;
-            background-color: #bbb;
-            border: none;
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .slider-dots button.active {
-            background-color: #717171;
-        }
-        
-
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tiro+Devanagari+Hindi&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="container bg-[#FFDADA]" >
-    <div id="main_body" class="">
-        <div class="p-1 shadow-md sticky bg-[#CB0000] h-auto">
-            <div class="container  flex justify-between items-center pl-[10px] pr-[10px] space-x-2">
-                <img src="img/logo (2).svg" alt="" class="items-center w-[290px] h-[90px]">
-                <div class="hidden md:flex  md:justify-center md:items-center font-normal">
-                    <ul class="flex justify-center items-center space-x-3">
-                        <li><a href="#" class="text-white">Track Package</a></li>
-                        <li><a href="#" class="text-white">Find Post Office</a></li>
-                        <li><a href="#" class="text-white">Calculate</a></li>
-                        <li><a href="#" class="text-white">Services</a></li>
-                        <li class=" border bg-white rounded text-black w-[85px] flex items-center  justify-center "><a
-                                href="">Login</a></li>
-                        <li class=" border bg-white rounded text-black w-[85px] flex  items-center  justify-center"><a
-                                href="">Register</a></li>
-                    </ul>
-                </div>
-                <button id="menu-button" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
+<body class="w-[100%] overflow-x-hidden m-0 p-0 shadow-custom ">
+    <!-- nav-bar -->
+    <div class="container w-full ">
+        <div class="w-screen flex justify-between pt-[2px]">
+            <div class="flex pl-[15px] pt-[4px] sm:pl-[5px]">
+                <img src="img/logo.svg" alt="" class="w-[170px] pl-[10px]">
+
             </div>
+
+            <div class="flex justify-center items-center sm:hidden md:hidden pr-[15px]">
+                <ul class="flex justify-center items-center gap-[40px]  ">
+                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Track Package</a></li>
+                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Find Post Office</a></li>
+                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Calculate</a></li>
+                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Services</a></li>
+                    <li
+                        class="text-[#FFFFFF] border bg-[#CB0000] rounded-[30px] font-semibold flex items-center w-[120px] h-[40px] justify-center ">
+                        <a href="" class="">Get Started </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <button id="menu-button" class="2xl:hidden xl:hidden lg:hidden focus:outline-none pr-[15px]">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
         </div>
 
+        <!-- mobile and tab done -->
 
         <div id="mobile-menu"
-            class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform menu-hidden transition-transform md:hidden   border border-l border-[#ffffff2c] backdrop-blur bg-transparent  justify-start  items-start px-8 z-20 text-xl md:text-2xl gap-2 text-white  max-w-fit ">
+            class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform menu-hidden transition-transform lg:hidden 2xl:hidden xl:hidden  border border-l border-[#ffffff2c] backdrop-blur bg-transparent  justify-start  items-start px-8 z-20 text-xl lg:text-2xl gap-4 text-white  max-w-fit ">
             <div class="p-4">
                 <button id="close-menu" class="focus:outline-none">
                     <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -106,18 +69,14 @@
                     </svg>
                 </button>
                 <div class="mt-8">
-                    <a href="#" class="block py-2 text-black">Track Package</a>
-                    <a href="#" class="block py-2 text-black">Find Post Office</a>
-                    <a href="#" class="block py-2 text-black">Calculate</a>
-                    <a href="#" class="block py-2 text-black">Services</a>
+                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Track Package</a>
+                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Find Post Office</a>
+                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Calculate</a>
+                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Services</a>
                     <ul class="   items-center space-y-3">
                         <li
-                            class=" border bg-[#CB0000] rounded text-white w-[100px] h-auto items-center flex justify-center ">
-                            <a href="">Login</a>
-                        </li>
-                        <li
-                            class=" border bg-[#CB0000] rounded text-white w-[100px] h-auto items-center flex justify-center">
-                            <a href="">Register</a>
+                            class=" border bg-[#CB0000] rounded-[30px] text-white  flex items-center w-[120px] h-[40px] justify-center ">
+                            <a href="" class="text-[#ffffff]">Get Started </a>
                         </li>
 
                     </ul>
@@ -125,97 +84,158 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- hero-section -->
+    <div id="hero" class=" bg-gradient-custom  w-[100%] md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between rounded-[4px]   mt-[10px] h-screen sm:h-[800px]">
+        <div class="  flex justify-center 2xl:w-[60%] xl:w-[60%] lg:w-[60%] lg:pt-[50px] xl:pt-[50px] 2xl:pt-[55px]  pt-[20px]  rounded-[25px]">
+            <div class="pt-[20px]">
+                <div class=" text-center items-center  ">
+                    <h1 class="font-roboto-mono font-bold text-[31px] 2xl:text-[56px] lg:text-[38px] xl:text-[56px]">Connecting <span
+                            class="font-Tiro text-[#FF671F]">IN</span><span class="font-Tiro text-[#FFFFFF]">D<span
+                                class="font-Tiro text-[#046A38]"><span>IA</span> <span class="text-[#000000]">,</span>
+                    </h1>
+                    <h1 class="font-roboto-mono font-bold text-[31px] 2xl:text-[56px] xl:text-[56px] lg:text-[38px]">Yesterday and Today</h1>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <img src="img/Line 1.svg" alt="" class="pt-[7px] 2xl:w-[750px] xl:w-[750px] lg:w-[590px]">
+                </div>
+                <div class="flex justify-center items-center pt-[5px]">
+                    <h1 class="font-crimson font-semibold text-[30px] 2xl:text-[54px] xl:text-[54px] lg:text-[48px]">"Har Kone Mein Aapke Sath"</h1>
+                </div>
+
+                <div class="flex justify-center sm:pt-[25px] md:pt-[20px] 2xl:pt-[30px] xl:pt-[30px]">
+                    <button class="text-[#FFFFFF] text-center  bg-[#046A38] rounded-[14px] w-[110px] h-[50px]">Know
+                        Us</button>
+                </div>
+            </div>
         </div>
-        <!-- main content -->
+        <div class="md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]">
+            <img src="img/postman.svg" alt="">
+        </div>
 
-        <!-- slider -->
-    
-            <div id="main-content" class="rounded-lg   p-[10px] ">
-                <!-- slider -->
-                <div class=" rounded-lg slider-wrapper md:w-full md:h-[600px] h-[205px]">
-                    <div class="slider" id="slider">
-                        <div class="slide">
-                            <img src="img/i1.png" class="" alt="Slide 1">
-                        </div>
-                        <div class="slide">
-                            <img src="img/i2.png" class="" alt="Slide 2">
-                        </div>
-                        <div class="slide">
-                            <img src="img/i3.png" class="w-full" alt="Slide 3">
-                        </div>
-                    </div>
-                    <div class="slider-dots  " id="slider-dots">
-                        <button class="dot active "></button>
-                        <button class="dot"></button>
-                        <button class="dot"></button>
-                    </div>
-                </div>
+    </div>
+    <!-- tracking section -->
+
+    <div id="new-section" class="bg-gradient-to-custom1 md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between w-full  sm:h-[700px]  rounded-[4px] mt-[6px]">
+        <div class="md:pt-[40px] lg:pl-[50px] lg:pt-[40px] 2xl:pl-[40px] 2xl:pt-[50px]">
+            <div class="grid grid-rows-1 justify-center items-center pt-[20px] xl:pl-[50px] xl:pt-[40px]">
+                <h1 class="flex justify-center font-roboto-mono font-bold  text-[31px] lg:text-[60px] md:text-[40px] xl:text-[80px] 2xl:text-[80px]  ">One Click to</h1>
+                <h1 class="flex font-roboto-mono text-[31px] lg:text-[45px] text-[#545353] font-bold md:text-[35px] xl:text-[75px]  2xl:text-[60px]">Find Your Shipment</h1>
+                
             </div>
-
-
-
-
-
-            <div id="tracking" class=" md:justify-between pt-[8px] p-[10px] md:flex gap-2  ">
-                <div id="urgent" class=" ">
-                    <img src="img/urgent.png" alt="" class="md:h-[500px] md:w-[600px]">
-
-                </div>
-                <div id="track" class="bg-white md:w-[700px]  rounded-[15px] pt-[5px] md:pt-[0px] h-[400px] md:h-[490px] ">
-                    <div class="flex pt-[10px] justify-center items-center ">
-                        <div class="flex justify-center items-center space-x-5">
-                            <h1 class="font-black pt-[15px]">Track</h1>
-                            <img src="img/track_car.png" alt="" class="w-[60px] h-[60px]">
-                            <h1 class="font-black pt-[15px]">Trace</h1>
-                        </div>
-                    </div>
-                    <div class="w-[100%] px-[40px] " >
-                        <hr class="border-t-[3.2px] border-[#FF0000]  mx-[120px] md:mx-[120px]" >
-                        <hr class=" border-t border-black"> 
-                        
-                    </div>
-                    <div id="track-btn" class="grid grid-rows-2 grid-flow-col   justify-center items-center pt-[15px] w-full">
-                        <!-- <div class="flex justify-center items-center ">
-                            <button class="px-4 py-[12px] md:py-[14px] md:px-[30px] border rounded-l-lg bg-[#545353] text-white">Consignment</button>
-                            <button class="flex items-center justify-center px-4 py-[12px] md:pb-[2px] md:pt-[24px] md:my-[5px]  md:px-[20px] border rounded-none bg-white text-black">
-                                Ref No.
-                            </button>
-                            
-                            <button class="px-4 py-[12px] md:py-[14px] md:px-[30px] border rounded-r-lg bg-white text-black">Complaint</button>
-                          </div> -->
-                          <div class="flex border border-black rounded-lg overflow-hidden shadow-lg">
-                            <button class="flex-1 px-4 py-2 bg-gray-700 text-white border-r border-black">Consignment</button>
-                            <button class="flex-1 px-4 py-2 bg-gray-100 text-black border-r border-black">Ref No.</button>
-                            <button class="flex-1 px-4 py-2 bg-gray-100 text-black">Complaint</button>
-                        </div>
-                        
-                          <div class="flex justify-center pt-[15px]">
-                                <input  placeholder="Enter Tracking Number" type="text" class=" box-border placeholder-gray placeholder-center placeholder-text-lg  py-[14px] md:px-[100px] px-[50px] text-[16px] w-full  border rounded-[20px]  bg-[#F5F3F3]"> 
-                        </div>
-                    </div>
-                    <div class="grid grid-rows-2 grid-flow-col gap-4 md:gap-8 pt-[60px] justify-center items-center ">
-                        <button type="submit" class= "items-center  text-white border rounded-[12px] p-[10px] bg-[#000000] w-[150px]">Track Now</button>
-                        <button type="submit" class= "items-center  text-white border rounded-[12px] p-[10px] bg-[#CC0000] w-[150px]">E-Receipt</button>
-                    </div>
-                    
-                        
-
-                    
-                    
-                    
-
-
-                </div>
-    
+            <div class="flex justify-center items-center pt-[20px] md:pt-[100px] lg:pt-[48px] 2xl:pt-[60px]" id="tracking1">
+                <img src="img/delivery.svg" alt="" class="w-[390px] lg:w-[500px] xl:w-[700px] 2xl:w-[700px]">
             </div>
+        </div>
+        <!-- tracking cart -->
+        <div class="bg-[#E6F7FF]  rounded-[20px] m-[15px] h-[350px] md:w-[350px] lg:mt-[30px] xl:w-[400px] xl:h-[400px] xl:mt-[60px] xl:ml-[5px] 2xl:mt-[75px] 2xl:mr-[40px] 2xl:w-[450px] 2xl:h-[430px]">
+            <div class="grid grid-rows-1 justify-center items-center ">
+                <div class="grid grid-rows-1 justify-center items-center" >
+                    <img src="img/track_car.png" alt="" class="w-16 h-16 flex justify-center items-center" id="tracking">
+                    <hr class="flex justify-center items-center w-[77px] text-[#FF0000] border-[1.4px]">
+                </div>
+                <hr class="md:w-[320px] lg:w-[350px] w-[350px] h-[10px] xl:w-[360px] 2xl:w-[420px]">
+            </div>
+            <div>
+                <div class="flex justify-center items-center md:w-[350px] lg:w-[380px] ">
+                    <button class="items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] rounded-l-md">Consignment</button>
+                    <button class="items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] ">Ref No.</button>
+                    <button class="items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] rounded-r-md">Complaint</button>
+                </div>
 
-            <div id ="">
+                <div class="flex justify-center pt-[20px]">
+                    <input type="text" name="Enter Identification Number" id="track_input" placeholder="Enter Identification Number" class="  box-border border bg-[#D9D9D9] rounded-[12px] w-[300px]  lg:w-[324px] xl:w-[330px] 2xl:w-[392px] h-[50px] placeholder:text-center placeholder:text-[#000000] shadow-custom pl-1.5 caret-red-500 focus:outline-none focus:border-black">
+                </div>
+
+            </div>
+            <div class="grid grid-rows-1 justify-center items-center pt-[20px] gap-4">
+                <button class="bg-[#365aa8] text-[#ffffff] font-bold items-center flex justify-center border h-[45px] w-[110px] rounded-[15px]">Track Now</button>
+                <button class="bg-[#D32F2F] text-[#ffffff] font-bold items-center flex justify-center border h-[45px] w-[110px] rounded-[15px]">E-Receipt</button>
 
             </div>
 
-    
+        </div>
 
-       
+    </div>
+    <!-- services -->
+    <div class="bg-gradient-custom  sm:h-[750px] md:h-[400px]">
+        <div class="pt-[30px]">
+            <h1 class="text-center font-roboto-mono font-bold text-[20px] ">Delivering Mail with Speed and<br><span class="block">Accuracy</span></h1>
+            <h2 class="text-center font-Tiro text-[14px] sm:px-[35px] font-medium">We guarantee the utmost accuracy and professionalism in handling your mail.</h2>
+        </div>
+        <!--  -->
+        <div class="grid grid-rows-1 justify-center items-center gap-4 pt-[30px] md:flex md:justify-around text-center">
+            <div class="bg-[#E6F7FF]  text-centerr w-[150px] h-[150px] rounded-[15px] pt-[20px] md:pt-[15px]">
+                <div class="flex justify-center">
+                    <img src="img/postal.svg" alt="">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[20px]">Buy Stamp</h1>
+                </div>
+            </div>
+            <div class="bg-[#E6F7FF]  text-centerr w-[150px] h-[150px] rounded-[15px] pt-[20px]">
+                <div class="flex justify-center">
+                    <img src="img/picode.svg" alt="">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[20px]">Find Pincode</h1>
+                </div>
+            </div>
+            <div class="bg-[#E6F7FF]  text-centerr w-[150px] h-[150px] rounded-[15px] pt-[20px]">
+                <div class="flex justify-center">
+                    <img src="img/click.svg" alt="">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[20px]">Click N Book</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- other verticals -->
+
+    <div class="bg-gradient-custom sm:h-[1050px]">
+        <div class="pt-[25px]">
+            <h1 class="text-center font-roboto-mono font-bold text-[20px] ">Services</h1>
+            <h2 class="text-center font-Tiro text-[14px] sm:px-[35px] font-medium">Welcome to our India Post.  Explore our website to learn more.</h2>
+        </div>
+        <!--  -->
+        <div class="grid grid-rows-1 justify-center items-center gap-4 pt-[25px]">
+            <div class="bg-[#E6F7FF]  text-centerr w-[200px] h-[200px] rounded-[15px] pt-[25px]">
+                <div class="flex justify-center">
+                    <img src="img/s1.svg" alt="" class="w-[250px]">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[30px]">Dak Karmayogi Portal</h1>
+                </div>
+            </div>
+            <div class="bg-[#E6F7FF]  text-centerr w-[200px] h-[200px] rounded-[15px] pt-[20px]">
+                <div class="flex justify-center">
+                    <img src="img/s2.svg" alt="" class="w-[150px]">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[20px]">Post Office Savings Bank</h1>
+                </div>
+            </div>
+            <div class="bg-[#E6F7FF]  text-centerr w-[200px] h-[200px] rounded-[15px] pt-[20px]">
+                <div class="flex justify-center">
+                    <img src="img/s3.svg" alt="" class="w-[100px]">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[20px]">India Post Payments Bank</h1>
+                </div>
+            </div>
+            <div class="bg-[#E6F7FF]  text-centerr w-[200px] h-[200px] rounded-[15px] pt-[20px]">
+                <div class="flex justify-center">
+                    <img src="img/s4.svg" alt="" class="w-[150px]">
+                </div>
+                <div class="text-center">
+                    <h1 class="font-Tiro pt-[15px]">Postal Life Insurance</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -223,7 +243,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="index.js"></script>
-
-
 
 </html>

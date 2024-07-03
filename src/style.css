@@ -1,11 +1,28 @@
 
-@keyframes gradientAnimation {
-0% { opacity: 0; }
-50% { opacity: 0.5; }
-100% { opacity: 0; }
+
+.menu-hidden {
+    transform: translateX(100%);
 }
 
-.animate-gradient {
-animation: gradientAnimation 4s ease-in-out infinite;
+.menu-visible {
+    transform: translateX(0);
 }
 
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.example-class {
+    background: linear-gradient(to bottom, #ebf8ff, #ffffff);
+    height: 100vh; /* Just to show the gradient effect */
+  }
+
+/* styles.css */
+.bg-pattern {
+    background-image: url('path-to-your-pattern-image.png'); /* Replace with the actual path to your pattern image */
+    background-repeat: repeat; /* or no-repeat, depending on your preference */
+    background-size: cover; /* or contain, depending on your preference */
+  }
+  

@@ -25,3 +25,7 @@
     background-repeat: repeat; /* or no-repeat, depending on your preference */
     background-size: cover; /* or contain, depending on your preference */
   }
+.section{
+    position: relative; /* Ensure relative positioning for cursor to work properly */
+    z-index: 1; 
+}

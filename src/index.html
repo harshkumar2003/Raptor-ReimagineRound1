@@ -21,10 +21,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 </head>
 
-<body class="w-[100%] overflow-x-hidden m-0 p-0 shadow-custom " id="main">
-    <div id="cursor" class="w-[20px] h-[20px] rounded-full bg-gradient-custom  fixed">
+<body class="w-[100%] overflow-x-hidden m-0 p-0 shadow-custom " id="main" >
+    <div id="cursor" class="w-[20px] h-[20px] rounded-full  sm:hidden  pointer-events-none fixed bg-gradient-custom z-[10000]">
 
     </div>
     <!-- nav-bar -->
@@ -36,14 +37,14 @@
             </div>
 
             <div class="flex justify-center items-center sm:hidden md:hidden pr-[15px]">
-                <ul class="flex justify-center items-center gap-[40px]  ">
-                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Track Package</a></li>
-                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Find Post Office</a></li>
-                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Calculate</a></li>
-                    <li><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]">Services</a></li>
+                <ul class="flex justify-center items-center gap-[40px]  " >
+                    <li  id="nav-item" ><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]  " >Track Package</a></li>
+                    <li  id="nav-item" ><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]  " >Find Post Office</a></li>
+                    <li  id="nav-item" ><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]  " >Calculate</a></li>
+                    <li  id="nav-item" ><a href="#" class="text-[#000000] font-semibold hover:text-[#CB0000]  " >Services</a></li>
                     <li
-                        class="text-[#FFFFFF] border bg-[#CB0000] rounded-[30px] font-semibold flex items-center w-[120px] h-[40px] justify-center ">
-                        <a href="" class="">Get Started </a>
+                        class="text-[#FFFFFF] border bg-[#CB0000] rounded-[30px] font-semibold flex items-center w-[120px] h-[40px] justify-center " id="gets">
+                        <a href="#" >Get Started </a>
                     </li>
 
                 </ul>
@@ -62,7 +63,7 @@
         <!-- mobile and tab done -->
 
         <div id="mobile-menu"
-            class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform menu-hidden transition-transform lg:hidden 2xl:hidden xl:hidden  border border-l border-[#ffffff2c] backdrop-blur bg-transparent  justify-start  items-start px-8 z-20 text-xl lg:text-2xl gap-4 text-white  max-w-fit ">
+            class="fixed top-0 right-0 w-64 h-full  shadow-lg transform menu-hidden transition-transform lg:hidden 2xl:hidden xl:hidden  border border-l border-[#ffffff2c] backdrop-blur   justify-start  items-start px-8 z-20 text-xl lg:text-2xl gap-4 text-white  max-w-fit ">
             <div class="p-4">
                 <button id="close-menu" class="focus:outline-none">
                     <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -72,10 +73,10 @@
                     </svg>
                 </button>
                 <div class="mt-8">
-                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Track Package</a>
-                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Find Post Office</a>
-                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Calculate</a>
-                    <a href="#" class="block py-2 text-black font-semibold text-[#000000]">Services</a>
+                    <a href="#" class="block py-2 text-black font-semibold ">Track Package</a>
+                    <a href="#" class="block py-2 text-black font-semibold ">Find Post Office</a>
+                    <a href="#" class="block py-2 text-black font-semibold ">Calculate</a>
+                    <a href="#" class="block py-2 text-black font-semibold ">Services</a>
                     <ul class="   items-center space-y-3">
                         <li
                             class=" border bg-[#CB0000] rounded-[30px] text-white  flex items-center w-[120px] h-[40px] justify-center ">
@@ -90,26 +91,31 @@
     </div>
 
     <!-- hero-section -->
-    <div id="hero" class=" bg-gradient-custom  w-[100%] md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between rounded-[4px]   mt-[10px] h-screen sm:h-[800px]">
+    <div id="section1" class=" bg-gradient-custom  w-[100%] md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between rounded-[4px]   mt-[10px]  sm:h-[800px] h-screen ">
         <div class="  flex justify-center 2xl:w-[60%] xl:w-[60%] lg:w-[60%] lg:pt-[50px] xl:pt-[50px] 2xl:pt-[55px]  pt-[20px]  rounded-[25px]">
             <div class="pt-[20px]">
                 <div class=" text-center items-center  ">
-                    <h1 class="font-roboto-mono font-bold text-[31px] 2xl:text-[56px] lg:text-[38px] xl:text-[56px]">Connecting <span
-                            class="font-Tiro  text-[#FF671F]">IN</span><span class="font-Tiro  text-[#FFFFFF]">D<span
-                                class="font-Tiro  text-[#046A38]"><span>IA</span> <span class="text-[#000000]">,</span>
+                    <h1 class="font-roboto-mono font-bold text-[31px] 2xl:text-[56px] lg:text-[38px] xl:text-[56px]" id="Connecting">Connecting <span id="in" class="font-Tiro  text-[#FF671F] ">IN</span><span id="d"  class="font-Tiro  text-[#ffff] ">D</span><span  id="ia" class="font-Tiro text-[#046A38] "><span>IA</span> 
+                        <span class="text-[#000000] " id="comma">,</span>
                     </h1>
+                    <!-- <h1 class="font-roboto-mono font-bold text-[31px] 2xl:text-[56px] lg:text-[38px] xl:text-[56px]">
+                        Connecting
+                        <span id="in" class="text-animation font-Tiro text-[#000000]">IN</span>
+                        <span id="d" class="text-animation font-Tiro text-[#000000]">D</span>
+                        <span id="ia" class="text-animation font-Tiro text-[#000000]">IA</span>,
+                    </h1> -->
                     <h1 class="font-roboto-mono font-bold text-[31px] 2xl:text-[56px] xl:text-[56px] lg:text-[38px]">Yesterday and Today</h1>
                 </div>
 
                 <div class="flex justify-center items-center">
-                    <img src="img/Line 1.svg" alt="" class="pt-[7px] 2xl:w-[750px] xl:w-[750px] lg:w-[590px]">
+                    <img src="img/Line 1.svg" alt="" class="pt-[7px] 2xl:w-[750px] xl:w-[750px] lg:w-[590px] " id="line">
                 </div>
                 <div class="flex justify-center items-center pt-[5px]">
                     <h1 class="font-crimson font-semibold text-[30px] 2xl:text-[54px] xl:text-[54px] lg:text-[48px]">"Har Kone Mein Aapke Sath"</h1>
                 </div>
 
                 <div class="flex justify-center sm:pt-[25px] md:pt-[20px] 2xl:pt-[30px] xl:pt-[30px]">
-                    <button class="text-[#FFFFFF] text-center  bg-[#046A38] rounded-[14px] w-[110px] h-[50px]">Know
+                    <button class="text-[#FFFFFF] text-center  bg-[#046A38] rounded-[14px] w-[110px] h-[50px] " id="know">Know
                         Us</button>
                 </div>
             </div>
@@ -120,8 +126,8 @@
 
     </div>
     <!-- tracking section -->
-
-    <div id="new-section" class="bg-gradient-to-custom1 md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between w-full  sm:h-[700px]  rounded-[4px] mt-[6px]">
+    <div class=" h-[1px] bg-[#ffff]  absolute left-[0px] right-[0px]  section"></div>
+    <div id="section2" class="bg-gradient-to-custom1 md:flex md:justify-between lg:flex lg:justify-between xl:flex xl:justify-between 2xl:flex 2xl:justify-between w-full  sm:h-[700px]  rounded-[4px]  section">
         <div class="md:pt-[40px] lg:pl-[50px] lg:pt-[40px] 2xl:pl-[40px] 2xl:pt-[50px]">
             <div class="grid grid-rows-1 justify-center items-center pt-[20px] xl:pl-[50px] xl:pt-[40px]">
                 <h1 class="flex justify-center font-roboto-mono font-bold  text-[31px] lg:text-[60px] md:text-[40px] xl:text-[80px] 2xl:text-[80px]  ">One Click to</h1>
@@ -137,15 +143,15 @@
             <div class="grid grid-rows-1 justify-center items-center ">
                 <div class="grid grid-rows-1 justify-center items-center" >
                     <img src="img/track_car.png" alt="" class="w-16 h-16 flex justify-center items-center" id="tracking">
-                    <hr class="flex justify-center items-center w-[77px] text-[#FF0000] border-[1.4px]">
+                    <hr class="flex justify-center items-center w-[77px] border-[#cb0000] border-[1.px]">
                 </div>
-                <hr class="md:w-[320px] lg:w-[350px] w-[350px] h-[10px] xl:w-[360px] 2xl:w-[420px]">
+                <hr class="md:w-[320px] lg:w-[350px] w-[350px] h-[10px] xl:w-[360px] 2xl:w-[420px] border-[#000000]">
             </div>
             <div>
                 <div class="flex justify-center items-center md:w-[350px] lg:w-[380px] ">
-                    <button class="items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] rounded-l-md">Consignment</button>
-                    <button class="items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] ">Ref No.</button>
-                    <button class="items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] rounded-r-md">Complaint</button>
+                    <button class="border-[#cb0000] items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] rounded-l-md">Consignment</button>
+                    <button class="border-[#cb0000] items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] ">Ref No.</button>
+                    <button class="border-[#cb0000] items-center flex justify-center border h-[40px] w-[110px] 2xl:w-[130px] md:w-[100px] rounded-r-md">Complaint</button>
                 </div>
 
                 <div class="flex justify-center pt-[20px]">
@@ -163,14 +169,15 @@
 
     </div>
     <!-- services -->
-    <div class="bg-gradient-custom  sm:h-[750px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[600px]">
+    <div class=" h-[1px] bg-[#ffff]  absolute left-[0px] right-[0px]  section"></div>
+    <div id="section3" class="bg-gradient-custom  sm:h-[750px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[600px] rounded-[4px] section">
         <div class="pt-[30px]">
-            <h1 class="text-center font-roboto-mono font-bold text-[20px] md:text-[28px] lg:text-[28px] xl:text-[28px] 2xl:text-[50px]">Delivering Mail with Speed and<br><span class="block">Accuracy</span></h1>
-            <h2 class="text-center font-Tiro  text-[14p 2xl:text-[20px]x] sm:px-[35px] font-medium md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] ">We guarantee the utmost accuracy and professionalism in handling your mail.</h2>
+            <h1 class="text-center font-roboto-mono font-bold text-[20px] md:text-[28px] lg:text-[28px] xl:text-[28px] 2xl:text-[50px] underline">Delivering Mail with Speed and<br><span class="block">Accuracy</span></h1>
+            <h2 class="text-center font-Tiro  text-[14p 2xl:text-[20px]x] sm:px-[35px] font-medium md:text-[17px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] ">We guarantee the highest standards of accuracy and expertise in handling your mail.</h2>
         </div>
         <!-- card -->
         <div class="grid grid-rows-1 justify-center items-center gap-4 pt-[30px] md:flex md:justify-around text-center md:pt-[45px] lg:flex lg:justify-evenly lg:gap-4 lg:pt-[50px] xl:flex xl:justify-evenly xl:pt-[50px] 2xl:flex 2xl:justify-evenly 2xl:pt-[55px]">
-            <div class="bg-[#E6F7FF]  text-center w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-[15px] pt-[20px] md:pt-[15px]">
+            <div class="bg-[#E6F7FF]  text-center w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-[15px] pt-[20px] md:pt-[15px]" id="stamp">
                 <div class="flex justify-center">
                     <img src="img/postal.svg" alt="">
                 </div>
@@ -178,7 +185,7 @@
                     <h1 class="font-Tiro 2xl:pt-[50px] pt-[20px] 2xl:text-[20px]">Buy Stamp</h1>
                 </div>
             </div>
-            <div class="bg-[#E6F7FF]  text-center w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-[15px] pt-[20px]">
+            <div class="bg-[#E6F7FF]  text-center w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-[15px] pt-[20px]" id="find-pincode">
                 <div class="flex justify-center">
                     <img src="img/picode.svg" alt="">
                 </div>
@@ -186,7 +193,7 @@
                     <h1 class="font-Tiro 2xl:pt-[50px] pt-[20px] 2xl:text-[20px]">Find Pincode</h1>
                 </div>
             </div>
-            <div class="bg-[#E6F7FF]  text-center w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-[15px] pt-[20px]">
+            <div class="bg-[#E6F7FF]  text-center w-[150px] h-[150px] 2xl:w-[200px] 2xl:h-[200px] rounded-[15px] pt-[20px]" id="click-book">
                 <div class="flex justify-center">
                     <img src="img/click.svg" alt="">
                 </div>
@@ -197,15 +204,16 @@
         </div>
     </div>
     <!-- other verticals -->
+    <div class=" h-[1px] bg-[#ffff]  absolute left-[0px] right-[0px]  section"></div>
 
-    <div class="bg-gradient-custom sm:h-[1050px] md:h-[610px] lg:h-[450px] xl:h-[450px] 2xl:h-[500px]">
+    <div id="section4" class="bg-gradient-custom sm:h-[1050px] md:h-[610px] lg:h-[450px] xl:h-[450px] 2xl:h-[500px] rounded-[4px] section">
         <div class="pt-[25px]">
-            <h1 class="text-center font-roboto-mono font-bold text-[20px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[60px]">Services</h1>
+            <h1 class="text-center font-roboto-mono font-bold text-[20px] md:text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[60px] underline">Services</h1>
             <h2 class="text-center font-Tiro  text-[14p 2xl:text-[20px]x] sm:px-[35px] font-medium md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[25px]">Welcome to our India Post.  Explore our website to learn more.</h2>
         </div>
         <!-- card -->
-        <div id="v_card" class=" grid grid-rows-1 justify-center items-center gap-4 pt-[25px] md:grid md:grid-cols-3 md:justify-items-center	 md:items-center  md:pt-[50px] lg:flex lg:justify-evenly lg:pt-[65px] xl:flex xl:justify-evenly xl:pt-[70px] 2xl:flex 2xl:justify-evenly 2xl:pt-[60px]">
-            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]   pt-[25px] transition-opacity duration-300 hover:bg-gradient-custom">
+        <div id="v_card" class=" grid grid-rows-1 justify-center items-center gap-4 pt-[25px] md:grid md:grid-cols-3 md:justify-items-center	 md:items-center  md:pt-[50px] lg:flex lg:justify-evenly lg:pt-[65px] xl:flex xl:justify-evenly xl:pt-[70px] 2xl:flex 2xl:justify-evenly 2xl:pt-[60px]" >
+            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]   pt-[25px] t" id="Dak">
                 <div class="flex justify-center">
                     <img src="img/s1.svg" alt="" class="w-[220px]">
                 </div>
@@ -213,7 +221,7 @@
                     <h1 class="font-Tiro 2xl:pt-[50px] pt-[47px] lg:pt-[50px] 2xl:text-[15px]">Dak Karmayogi Portal</h1>
                 </div>
             </div>
-            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]  pt-[20px]">
+            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]  pt-[20px]" id="Post">
                 <div class="flex justify-center">
                     <img src="img/s2.svg" alt="" class="w-[150px]">
                 </div>
@@ -221,7 +229,7 @@
                     <h1 class="font-Tiro  pt-[20px] 2xl:text-[15px]">Post Office Savings Bank</h1>
                 </div>
             </div>
-            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]  pt-[20px]">
+            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]  pt-[20px]" id="India">
                 <div class="flex justify-center">
                     <img src="img/s3.svg" alt="" class="w-[100px]">
                 </div>
@@ -229,7 +237,7 @@
                     <h1 class="font-Tiro  pt-[20px] 2xl:text-[15px]">India Post Payments Bank</h1>
                 </div>
             </div>
-            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]  pt-[20px] md:justify-items-center">
+            <div class="bg-[#E6F7FF]  text-center w-[200px] h-[200px] rounded-[15px]  pt-[20px] md:justify-items-center" id="Postal">
                 <div class="flex justify-center">
                     <img src="img/s4.svg" alt="" class="w-[120px]">
                 </div>
@@ -241,8 +249,9 @@
     </div>
 
     <!-- footer -->
+    <div class=" h-[1px] bg-[#cb0000]  absolute left-[0px] right-[0px]  section"></div>
 
-    <div class="bg-[#EB8728] mt-[20px] sm:h-[460px] md:h-[460px] lg:h-[300px] xl:h-[300px] h-[300px]" >
+    <div class="bg-[#EB8728]  sm:h-[460px] md:h-[460px] lg:h-[300px] xl:h-[300px] h-[300px] rounded-[4px] section" >
         <div class="lg:flex lg:justify-between lg:px-[30px] xl:flex xl:justify-between xl:px-[40px] 2xl:flex 2xl:justify-between 2xl:px-[50px]">
             <div class="grid gap-2 pt-[10px] pl-[10px] md:justify-center sm:justify-center ">
                 <img src="img/f_logo.svg" alt="" class="w-[200px]">
@@ -278,11 +287,11 @@
             
         
         </div>
-        <div class="sm:mt-[22px] h-[0.8px] bg-[#ffffff]  absolute left-[10px] right-[10px] md:mt-[30px] mt-[30px] mt-[30px]"></div>
+        <div class="sm:mt-[22px] h-[0.8px] bg-[#ffffff]  absolute left-[10px] right-[10px] md:mt-[30px] mt-[30px] "></div>
         <div class=" mt-[40px] absolute left-[15px] right-[15px]">
             
             <h1 class="text-center text-pretty font-bold">Department of Posts, Ministry of Communications, Government of India. Managed by Tata Consultancy Services Ltd.  </h1>
-            <div class="pt-[10px]"><h1 class="text-center text-pretty font-bold">Re-designed with <span class="text-[#E31B23] text-center ">❤️</span> by Team Raptor</h1></div>
+            <div class="pt-[10px]"><h1 class="text-center text-pretty font-bold">Re-designed with <span class="text-[#E31B23] text-center ">❤️</span> by <span class="text-[#ffff] font-bold font-roboto-mono ">Team Raptor</span></h1></div>
         </div>
 
 
@@ -291,6 +300,7 @@
 
 
 </body>
+<script src="https://unpkg.com/split-type"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="index.js"></script>

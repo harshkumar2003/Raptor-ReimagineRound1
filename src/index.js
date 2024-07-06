@@ -132,5 +132,35 @@ mobileMenu.classList.add('menu-hidden');
 //     // ScrollTrigger for the hero section
   
     
+  // gsap.registerPlugin(ScrollTrigger);
+
+  //   // Initial animation for the hero section
+  //   gsap.to("v_card", {
+  //     x: -100,
+  //     opacity: 0,
+  //     duration: 1.5,
+  //     delay: 0.1,
+      
+  //     scrollTrigger: {
+  //       trigger: "#v_card",
+  //       scroller: "body",
+  //       markers: true,
+  //       start: "top 55%"
+  //       }
+  //     })
     
+    // ScrollTrigger for the hero section
+  
     
+var main = document.getElementById("main")
+var cursor = document.getElementById("cursor")
+
+main.addEventListener("mousemove",function(dets){
+  gsap.to(cursor,{
+    x:dets.x,
+    y:dets.y,
+    duration:1,
+    ease:"back.out"
+  })
+
+})
